@@ -51,9 +51,7 @@ Os arquivos de dados serao criados automaticamente na pasta data/ ao realizar o 
 | Padrão GRASP | Classes | Justificativa |
 |---|---|---|
 | Information Expert | Feira, TipoFeira | Cada entidade valida suas proprias regras de negocio no metodo validar() |
-
 | Creator | Main | Instancia e conecta todas as dependencias manualmente, sem framework de injecao |
-
 | Controller | FeiraController | Unico ponto de entrada do menu; delega para servicos sem implementar regras de negocio |
 | Low Coupling | FeiraService, TipoFeiraService | Dependem apenas de interfaces de repositorio, sem conhecer implementacoes concretas |
 | High Cohesion | Todas as classes | Cada classe tem responsabilidade unica e bem definida |
